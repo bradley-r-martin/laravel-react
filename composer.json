@@ -1,0 +1,27 @@
+{
+  "name": "bradley-r-martin/laravel-react",
+  "description": "Laravel React Helper",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Brad Martin",
+      "email": "bradley.r.martin@me.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "bradley-r-martin/laravel-vivid": "1.0.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "BRM\\React\\FrameworkServiceProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "BRM\\React\\": "./"
+    }
+  }
+}
