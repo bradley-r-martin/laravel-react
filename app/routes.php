@@ -33,4 +33,4 @@ Route::get('{slug}', function () {
         return view('react::unbuilt');
     }
     return view('react::application', ['html'=> $html]);
-})->where('slug', '(?!api)(?!js)(?!json)(?!css)(?!html)(?!xml)(?!webmanifest)(?!txt)(?:[^img]*)([A-z\d-\/_.]+)?');
+})->where('slug', '(?!api)(?!uploads)(?!js)(?!json)(?!css)(?!html)(?!xml)(?!webmanifest)(?!txt)(?:[^img]*)([A-z\d-\/_.]+)?');
