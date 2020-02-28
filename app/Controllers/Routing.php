@@ -14,7 +14,7 @@ class Routing extends Controller{
     }
 
     public function index(){
-      $path = public_path('default.html');
+      $path = asset('default.html');
       if (file_exists($path)) {
           $html = file_get_contents($path);
           if (class_exists('\BRM\Tenants\FrameworkServiceProvider')) {
